@@ -1,0 +1,39 @@
+---
+title: "R-workshop"
+author: "Stephanie Long"
+date: "4/3/2020"
+output: html_document
+---
+
+# Set working directory and load data
+
+```{r}
+
+setwd("~/Documents not on iCloud/OneDrive - University of Arkansas/R-ladies/Workshop for Brewer Hub April 2020")
+
+load(file = "Movie Data.Rdata")
+
+```
+
+
+# 2: Understand what an ANOVA is even doing/ what sort of data is appropriate for it. 
+
+## It's important to understand what TYPE of data you need in ANOVA. An ANOVA is
+## basically just seeing if there is statistically significant difference
+## between the groups of a IV on some outcome variable. 
+
+## So you need the IV to be categorical and the DV to be continuous.
+
+# Look at the structure of the data and the type of variables in it
+
+```{r}
+str(movie_data)
+
+```
+
+```{r}
+summary(movie_data)
+
+```
+
+
