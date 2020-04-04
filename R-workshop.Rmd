@@ -9,8 +9,6 @@ output: html_document
 
 ```{r}
 
-setwd("~/Documents not on iCloud/OneDrive - University of Arkansas/R-ladies/Workshop for Brewer Hub April 2020")
-
 load(file = "Movie Data.Rdata")
 
 ```
@@ -36,4 +34,12 @@ summary(movie_data)
 
 ```
 
+#adding in new test for github upload
 
+```{r}
+
+library("tidyverse")
+
+boxplot(total_gross ~ genre, data = movie_data)
+
+```
