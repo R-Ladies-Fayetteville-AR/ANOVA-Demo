@@ -1,0 +1,580 @@
+"movie_title","release_date","genre","MPAA_rating","total_gross","inflation_adjusted_gross"
+"Snow White and the Seven Dwarfs",2019-12-21,"Musical","G",184925485,5228953251
+"Pinocchio",2019-02-09,"Adventure","G",84300000,2188229052
+"Fantasia",2019-11-13,"Musical","G",83320000,2187090808
+"Song of the South",2019-11-12,"Adventure","G",6.5e+07,1078510579
+"Cinderella",2019-02-15,"Drama","G",8.5e+07,920608730
+"20,000 Leagues Under the Sea",2019-12-23,"Adventure",NA,28200000,528279994
+"Lady and the Tramp",2019-06-22,"Drama","G",93600000,1236035515
+"Sleeping Beauty",2019-01-29,"Drama",NA,9464608,21505832
+"101 Dalmatians",2019-01-25,"Comedy","G",1.53e+08,1362870985
+"The Absent Minded Professor",2019-03-16,"Comedy",NA,25381407,310094574
+"Babes in Toyland",2019-12-14,"Musical","G",10218316,124841160
+"Bon Voyage!",2019-05-17,"Comedy","Not Rated",9230769,109581646
+"The Sword in the Stone",2019-12-25,"Adventure",NA,22182353,153870834
+"The Jungle Book",2019-10-18,"Musical","Not Rated",141843000,789612346
+"Blackbeard's Ghost",2019-02-08,"Comedy",NA,21540050,138612686
+"The Aristocats",2019-04-24,"Musical","G",55675257,255161499
+"The Boatniks",2019-07-01,"Comedy",NA,18607492,101200742
+"Bedknobs and Broomsticks",2019-10-07,"Musical",NA,17871174,91305448
+"The Apple Dumpling Gang",2019-07-01,"Comedy",NA,31916500,131246872
+"Freaky Friday",2019-01-21,"Comedy",NA,25942000,98067733
+"The Many Adventures of Winnie the Pooh",2019-03-11,NA,NA,0,0
+"The Rescuers",2019-06-22,"Adventure",NA,48775599,159743914
+"Herbie Goes to Monte Carlo",2019-06-24,NA,NA,2.8e+07,105847527
+"The Black Hole",2019-12-21,NA,NA,35841901,120377374
+"Midnight Madness",2019-02-08,NA,NA,2900000,9088096
+"The Last Flight of Noah’s Ark",2019-06-25,NA,NA,1.1e+07,34472116
+"The Devil and Max Devlin",2019-01-01,NA,NA,1.6e+07,48517980
+"Amy",2019-03-20,"Drama",NA,0,0
+"The Fox and the Hound",2019-07-10,"Comedy",NA,43899231,133118889
+"Condorman",2019-08-07,"Action",NA,0,0
+"Night Crossing",2019-02-05,"Drama",NA,4500000,12903059
+"Tron",2019-07-09,"Action",NA,26918576,77184895
+"Tex",2019-11-19,"Drama",NA,7199408,20643199
+"Trenchcoat",2019-03-11,"Comedy",NA,4304286,11519089
+"Something Wicked This Way Comes",2019-04-29,"Horror",NA,5656087,15136765
+"Never Cry Wolf",2019-10-07,"Drama",NA,27668764,70669955
+"Running Brave",2019-11-04,"Drama",NA,1204595,3223725
+"Splash",2019-03-09,"Comedy","PG",62599495,157057661
+"Country",2019-09-29,"Drama",NA,8400000,21075000
+"Baby: Secret of the Lost Legend",2019-03-22,"Adventure",NA,14276095,33900697
+"Return to Oz",2019-06-21,"Adventure",NA,10618813,25215934
+"The Black Cauldron",2019-07-24,"Adventure",NA,21288692,50553142
+"My Science Project",2019-08-09,"Comedy",NA,4100000,9736051
+"The Journey of Natty Gann",2019-09-27,"Drama",NA,9468512,22302956
+"One Magic Christmas",2019-11-22,"Drama",NA,13229514,31415432
+"Down and Out in Beverly Hills",2019-01-31,"Comedy","R",62134225,141183693
+"Off Beat",2019-04-11,"Comedy",NA,4842778,11003932
+"Ruthless People",2019-06-27,"Comedy","R",71624879,162748712
+"The Great Mouse Detective",2019-07-02,"Adventure",NA,23605534,53637367
+"Flight of the Navigator",2019-07-30,"Adventure",NA,18564613,42183197
+"Tough Guys",2019-10-03,"Comedy",NA,21458229,48758184
+"The Color of Money",2019-10-17,"Drama","R",52293000,117957323
+"Outrageous Fortune",2019-01-30,"Comedy","R",52864741,113976921
+"Tin Men",2019-03-06,"Comedy",NA,25411386,54787202
+"Ernest Goes to Camp",2019-05-22,"Comedy",NA,23509382,50686462
+"Benji the Hunted",2019-06-05,"Adventure",NA,15212539,32798382
+"Adventures in Babysitting",2019-07-03,"Comedy",NA,33790923,72853569
+"Stakeout",2019-08-05,"Comedy","R",65673233,141592160
+"Can't Buy Me Love",2019-08-14,"Romantic Comedy",NA,31623833,68181300
+"Hello Again",2019-11-06,"Comedy",NA,20419446,44024529
+"3 Men and a Baby",2019-11-25,"Comedy","PG",167780960,353334607
+"Good Morning Vietnam",2019-12-23,"Comedy","R",123922370,254414837
+"Shoot to Kill",2019-02-12,"Action",NA,29300000,60097074
+"D.O.A.",2019-03-18,"Thriller/Suspense",NA,12706478,26062188
+"Return to Snowy River",2019-04-15,"Adventure","PG",13687027,28073384
+"Big Business",2019-06-10,"Comedy","PG",40150487,82352451
+"Who Framed Roger Rabbit?",2019-06-22,"Comedy","PG",154112492,316250084
+"Cocktail",2019-07-29,"Drama","R",78222753,160442289
+"The Rescue",2019-08-05,"Action",NA,5855392,12009960
+"Heartbreak Hotel",2019-09-30,"Comedy",NA,5509417,11300331
+"The Good Mother",2019-11-04,"Drama",NA,4764606,9772655
+"Ernest Saves Christmas",2019-11-11,"Comedy","PG",28202109,57845202
+"Oliver & Company",2019-11-18,"Adventure","G",49576671,102254492
+"Beaches",2019-12-21,"Drama","PG-13",57041866,120381757
+"Three Fugitives",2019-01-27,"Comedy","PG-13",40590000,85757817
+"New York Stories",2019-03-01,"Drama","PG",10763469,22740861
+"Disorganized Crime",2019-04-14,"Comedy",NA,7210149,15233465
+"Dead Poets Society",2019-06-02,"Drama","PG",95860116,202531517
+"Honey, I Shrunk the Kids",2019-06-23,"Adventure","PG",130724172,276191669
+"Turner & Hooch",2019-07-28,"Comedy","PG",71079915,150176361
+"Cheetah",2019-08-18,"Adventure",NA,7882250,16653473
+"An Innocent Man",2019-10-06,"Drama","R",19397847,40983414
+"Gross Anatomy",2019-10-20,"Drama","PG-13",11346186,23972012
+"The Little Mermaid",2019-11-15,"Adventure","G",111543479,223726012
+"Blaze",2019-12-13,"Drama","R",19049727,39884640
+"Stella",2019-02-02,"Drama","PG-13",20062347,40077147
+"Where the Heart Is",2019-02-23,"Comedy",NA,1106475,2210321
+"Pretty Woman",2019-03-23,"Romantic Comedy","R",178406268,356389765
+"Ernest Goes to Jail",2019-04-06,"Comedy","PG",25029569,49999822
+"Spaced Invaders",2019-04-27,"Comedy","PG",1.5e+07,29964452
+"Fire Birds",2019-05-24,"Action","PG-13",14760451,29485923
+"Dick Tracy",2019-06-15,"Action","PG",103738726,207231621
+"Betsy's Wedding",2019-06-22,"Comedy","R",19740070,39433357
+"Arachnophobia",2019-07-18,"Thriller/Suspense","PG-13",53208180,106290270
+"DuckTales: The Movie - Treasure of th…",2019-08-03,"Adventure","G",18075331,36107823
+"Taking Care of Business",2019-08-17,"Comedy","R",20005435,39963460
+"Mr. Destiny",2019-10-12,"Comedy","PG-13",15379253,30722056
+"The Rescuers Down Under",2019-11-16,"Adventure","G",27931461,55796728
+"3 Men and a Little Lady",2019-11-21,"Comedy","PG",71609321,143108869
+"Green Card",2019-12-25,"Romantic Comedy","PG-13",29804169,59679131
+"White Fang",2019-01-18,"Adventure","PG",34729091,69540672
+"Scenes from a Mall",2019-02-22,"Comedy",NA,9563393,19149495
+"Haakon Haakonsen",2019-03-01,"Adventure","PG",15024232,30084149
+"The Marrying Man",2019-04-05,"Romantic Comedy","R",12454768,24939118
+"Oscar",2019-04-26,"Comedy","PG",23562716,47181395
+"One Good Cop",2019-05-03,"Action","R",11276846,22580472
+"What About Bob?",2019-05-17,"Comedy","PG",63710000,127571325
+"Wild Hearts Can't Be Broken",2019-05-24,"Drama",NA,7300000,14617333
+"The Rocketeer",2019-06-21,"Action","PG",46573027,93256673
+"The Doctor",2019-07-24,"Drama","PG-13",37497480,75084021
+"Paradise",2019-09-18,"Drama","PG-13",18634643,37313540
+"Deceived",2019-09-27,"Thriller/Suspense","PG-13",28738096,57544453
+"Ernest Scared Stupid",2019-10-11,"Comedy","PG",14143280,28320147
+"Billy Bathgate",2019-11-01,"Drama","R",15565363,31167691
+"Beauty and the Beast",2019-11-13,"Musical","G",218951625,363017667
+"Father of the Bride",2019-12-20,"Comedy","PG",89325780,179821881
+"The Hand That Rocks the Cradle",2019-01-10,"Thriller/Suspense","R",88036683,178831137
+"Medicine Man",2019-02-07,"Drama","PG-13",44948240,91304495
+"Blame it on the Bellboy",2019-03-06,"Comedy","PG-13",2891055,5872667
+"Noises Off...",2019-03-20,"Comedy","PG-13",2280148,4631720
+"Straight Talk",2019-04-03,"Comedy","PG",21202099,43068356
+"Newsies",2019-04-08,NA,"PG",2706352,5497481
+"Passed Away",2019-04-24,NA,"PG-13",4030793,8187848
+"Encino Man",2019-05-22,"Comedy","PG",40057130,81369058
+"Sister Act",2019-05-29,"Comedy","PG",139605150,283583472
+"Honey I Blew Up the Kid",2019-07-17,"Comedy","PG",58662452,119162518
+"A Stranger Among Us",2019-07-17,"Drama","PG-13",12282994,24950752
+"3 Ninjas",2019-08-07,"Action","PG",29028000,58965304
+"A Gun in Betty Lou's Handbag",2019-08-21,NA,"PG-13",3591460,7295423
+"Captain Ron",2019-09-18,"Comedy","PG-13",22518097,45741576
+"Sarafina!",2019-09-18,"Drama","PG-13",7306242,14841352
+"Innocent Blood",2019-09-25,"Horror","R",4877567,9907922
+"The Mighty Ducks",2019-10-02,"Comedy","PG",50752337,103120810
+"1492: Conquest of Paradise",2019-10-09,"Adventure","PG-13",7099531,14421454
+"Consenting Adults",2019-10-16,"Drama","R",21591728,43859823
+"Aladdin",2019-11-11,"Comedy","G",217350219,441969178
+"The Distinguished Gentleman",2019-12-04,"Comedy","R",46434570,94349900
+"The Muppet Christmas Carol",2019-12-11,"Comedy","G",27281507,55417615
+"Alive",2019-01-15,"Adventure","R",36299670,73914543
+"Aspen Extreme",2019-01-22,"Romantic Comedy","PG-13",7843388,15970955
+"Homeward Bound: The Incredible Journey",2019-02-03,"Adventure","G",41833324,85182343
+"The Cemetery Club",2019-02-03,"Comedy","PG-13",5583621,11369541
+"Swing Kids",2019-03-05,"Musical","PG-13",5632086,11468231
+"A Far Off Place",2019-03-12,"Adventure","PG",12890752,26248558
+"Born Yesterday",2019-03-26,"Romantic Comedy","PG",17760754,36165012
+"The Adventures of Huck Finn",2019-04-02,"Adventure","PG",24103594,49080505
+"Bound by Honor",2019-04-16,NA,"R",4496583,9156084
+"Indian Summer",2019-04-23,"Comedy","R",14717851,29968953
+"Super Mario Bros.",2019-05-28,"Action","PG",20844907,42445058
+"Guilty as Sin",2019-06-04,"Thriller/Suspense","R",22622537,46064723
+"Life With Mikey",2019-06-04,"Comedy","PG",12349549,25146538
+"What's Love Got to Do With It",2019-06-09,"Drama","R",39100956,79618610
+"Son in Law",2019-07-02,"Comedy","PG-13",25989889,52921433
+"Hocus Pocus",2019-07-16,"Comedy","PG",39360491,80147079
+"Another Stakeout",2019-07-23,"Comedy","PG-13",20107504,40943541
+"My Boyfriend's Back",2019-08-06,NA,"PG-13",3218882,6554384
+"Father Hood",2019-08-27,NA,"PG-13",3268203,6654819
+"The Joy Luck Club",2019-09-08,"Drama","R",32790064,66768171
+"Money for Nothing",2019-09-10,"Comedy","R",1044824,2127496
+"The Program",2019-09-24,"Action","R",23042200,46919256
+"Cool Runnings",2019-10-01,"Comedy","PG",68856263,140392731
+"The Nightmare Before Christmas",2019-10-13,"Musical","PG",50408318,100026637
+"The Three Musketeers",2019-11-12,"Adventure","PG",53661805,109310377
+"Sister Act 2 Back in the Habit",2019-12-10,"Comedy","PG",57319029,116965668
+"Tombstone",2019-12-25,"Western","R",56505065,115781734
+"The Air Up There",2019-01-07,"Comedy","PG",20782439,42940186
+"Cabin Boy",2019-01-07,"Comedy","PG-13",3469493,7168577
+"Iron Will",2019-01-14,"Drama","PG",20623071,42610902
+"Red Rock West",2019-01-28,NA,"R",2502551,5170709
+"Blank Check",2019-02-11,"Comedy","PG",30573770,63170804
+"Angie",2019-03-04,"Comedy","R",9252349,19116981
+"The Ref",2019-03-09,"Comedy","R",11325885,23401275
+"D2: The Mighty Ducks",2019-03-25,"Comedy","PG",45604206,94226333
+"Holy Matrimony",2019-04-08,"Comedy",NA,713234,1473665
+"White Fang 2: Myth of the White Wolf",2019-04-15,"Adventure","PG",8752399,18083994
+"The Inkwell",2019-04-22,"Comedy","R",8864699,18316030
+"When a Man Loves a Woman",2019-04-29,"Drama","R",50021959,103354194
+"3 Ninjas Kick Back",2019-05-06,"Action","PG",11744960,24267154
+"Renaissance Man",2019-06-03,"Comedy","PG-13",24172899,49945474
+"The Lion King",2019-06-15,"Adventure","G",422780140,761640898
+"I Love Trouble",2019-06-29,"Romantic Comedy","PG",30806194,63651027
+"Angels in the Outfield",2019-07-15,"Comedy","PG",50236831,103798152
+"In the Army Now",2019-08-12,"Comedy","PG",28881266,59673787
+"Color of Night",2019-08-19,"Thriller/Suspense","R",19750470,40804816
+"Camp Nowhere",2019-08-26,"Comedy","PG",10442641,21576332
+"It's Pat",2019-08-26,"Comedy",NA,60822,125666
+"A Simple Twist of Fate",2019-09-02,"Drama","PG-13",3404935,7035189
+"Quiz Show",2019-09-14,"Drama","PG-13",24787282,50840394
+"Terminal Velocity",2019-09-23,"Action","PG-13",16478900,34048315
+"Ed Wood",2019-09-30,"Comedy","R",5828466,12042634
+"The Puppet Masters",2019-10-21,"Horror","R",8579626,17727017
+"Squanto: A Warrior's Tale",2019-10-28,"Drama","PG",3319344,6858345
+"The Santa Clause",2019-11-11,"Comedy","PG",144833357,298369717
+"A Low Down Dirty Shame",2019-11-23,"Action","R",29317886,60321919
+"The Jungle Book",2019-12-25,"Adventure","PG",44342956,88930321
+"Houseguest",2019-01-06,"Comedy","PG",26325256,51016522
+"Bad Company",2019-01-20,"Thriller/Suspense","R",3523909,6829092
+"Miami Rhapsody",2019-01-27,"Romantic Comedy","PG-13",5086578,9857435
+"The Jerky Boys",2019-02-03,"Comedy","R",7555256,14641561
+"Heavy Weights",2019-02-17,"Comedy","PG",17671310,34245779
+"Man of the House",2019-03-03,"Comedy","PG",40029009,77573459
+"Roommates",2019-03-03,"Comedy","PG",12076989,23404369
+"Tall Tale",2019-03-24,"Western","PG",8247627,15983331
+"A Pyromaniac's Love Story",2019-03-28,"Romantic Comedy","PG",468240,907414
+"Jefferson in Paris",2019-03-31,"Drama","PG-13",2461628,4770461
+"Funny Bones",2019-03-31,"Comedy","R",529135,1025425
+"A Goofy Movie",2019-04-07,"Comedy","G",35336439,68479579
+"While You Were Sleeping",2019-04-21,"Romantic Comedy","PG",81057016,157082900
+"Crimson Tide",2019-05-12,"Action","R",91387195,177102077
+"Mad Love",2019-05-26,"Drama","PG-13",15446532,29934306
+"Pocahontas",2019-06-10,"Adventure","G",141579773,274370957
+"Judge Dredd",2019-06-30,"Action","R",34687912,67222776
+"Operation Dumbo Drop",2019-07-28,"Adventure","PG",24670346,47809421
+"Dangerous Minds",2019-08-11,"Drama","R",84919401,164552293
+"A Kid in King Arthur's Court",2019-08-11,"Adventure","PG",13406717,25981285
+"The Tie That Binds",2019-09-08,"Thriller/Suspense","R",5762795,11167895
+"Unstrung Heroes",2019-09-15,"Drama","PG",7929000,15365850
+"The Big Green",2019-09-29,"Comedy","PG",17736619,34372339
+"Dead Presidents",2019-10-04,"Drama","R",24120194,46741467
+"The Scarlet Letter",2019-10-13,"Drama","R",10359006,20075033
+"Feast of July",2019-10-13,"Drama","R",293274,568342
+"Powder",2019-10-27,"Drama","PG-13",30833914,59727216
+"Toy Story",2019-11-22,"Adventure","G",191796233,370409631
+"Father of the Bride Part II",2019-12-08,"Comedy","PG",76578911,147658438
+"Nixon",2019-12-20,"Drama","R",13668249,26302005
+"Tom and Huck",2019-12-22,"Adventure","PG",23837227,45911517
+"Mr. Holland's Opus",2019-12-29,"Drama","PG",82582604,157508868
+"White Squall",2019-02-02,"Adventure","PG-13",10229300,19509726
+"Muppet Treasure Island",2019-02-16,"Adventure","G",34327391,65470567
+"Mr. Wrong",2019-02-16,"Romantic Comedy","PG-13",12805071,24422334
+"Before and After",2019-02-23,"Drama","PG-13",8642118,16482589
+"Up Close & Personal",2019-03-01,"Drama","PG-13",51045801,97356578
+"Homeward Bound II: Lost in San Franc…",2019-03-08,"Adventure","G",32709423,62384706
+"Two Much",2019-03-15,"Romantic Comedy","PG-13",1078555,2057055
+"Un indien dans la ville",2019-03-22,"Comedy","PG",1029731,1963937
+"James and the Giant Peach",2019-04-12,"Adventure","PG",28921264,55159783
+"Celtic Pride",2019-04-19,"Comedy","PG-13",9240378,17623615
+"Last Dance",2019-05-03,"Drama","R",5857534,11171714
+"Boys",2019-05-10,"Drama","PG-13",21930418,41826566
+"Spy Hard",2019-05-24,"Comedy","PG-13",26936265,51373912
+"Eddie",2019-05-31,"Comedy","PG-13",31369401,59828966
+"The Rock",2019-06-07,"Action","R",134069511,255702705
+"The Hunchback of Notre Dame",2019-06-21,"Adventure","G",100138851,190988799
+"Phenomenon",2019-07-05,"Drama","PG",104636382,199559799
+"Kazaam",2019-07-17,"Comedy","PG",18880508,36009655
+"Jack",2019-08-09,"Drama","PG-13",58617334,111792852
+"First Kid",2019-08-30,"Comedy","PG",26465920,50465108
+"The Rich Man's Wife",2019-09-13,"Thriller/Suspense","R",8538318,16284619
+"D3: The Mighty Ducks",2019-10-04,"Comedy","PG",22936273,43713554
+"The Associate",2019-10-25,"Comedy","PG-13",12772657,24333094
+"Ransom",2019-11-08,"Action","R",136492681,259807820
+"The War at Home",2019-11-20,NA,"R",34368,65543
+"101 Dalmatians",2019-11-27,"Comedy","G",136189294,258728898
+"The Preacher's Wife",2019-12-13,"Drama","PG",48102795,91076877
+"Evita",2019-12-25,"Musical","PG",50047179,92077628
+"Metro",2019-01-17,"Action","R",32017895,58804106
+"Prefontaine",2019-01-24,"Drama","PG-13",590817,1085093
+"Shadow Conspiracy",2019-01-31,"Thriller/Suspense","R",2154540,3957025
+"That Darn Cat",2019-02-14,"Comedy","PG",18301828,33613158
+"Jungle 2 Jungle",2019-03-07,"Comedy","PG",59925026,110058379
+"The Sixth Man",2019-03-28,"Comedy","PG-13",14765099,27117599
+"Grosse Pointe Blank",2019-04-11,"Black Comedy","R",28084357,51579764
+"Romy and Michele's High School Reunion",2019-04-25,"Comedy","R",29235353,53693680
+"Gone Fishin'",2019-05-30,"Comedy","PG",19745922,36265379
+"Con Air",2019-06-06,"Action","R",101117573,185712664
+"Hercules",2019-06-13,"Adventure","G",99112101,182029412
+"George Of The Jungle",2019-07-16,"Comedy","PG",105263257,193326632
+"Nothing To Lose",2019-07-18,"Comedy","R",44480039,81692095
+"Air Bud",2019-08-01,"Comedy","PG",24646936,45266588
+"G.I. Jane",2019-08-22,"Drama","R",48169156,88467531
+"A Thousand Acres",2019-09-19,"Drama","R",7928412,14561324
+"Washington Square",2019-10-05,"Drama","PG",1775644,3257546
+"Rocket Man",2019-10-10,"Comedy","PG",15448043,28371890
+"Playing God",2019-10-17,"Thriller/Suspense","R",4166918,7652965
+"Flubber",2019-11-26,"Comedy","PG",92993801,170406423
+"An American Werewolf in Paris",2019-12-25,"Horror","R",26570463,48546161
+"Mr. Magoo",2019-12-25,"Comedy","PG",21437192,39145784
+"Kundun",2019-12-25,"Drama","PG-13",5686694,10236836
+"Deep Rising",2019-01-30,"Action","R",11203026,20136775
+"Krippendorf's Tribe",2019-02-27,"Comedy","PG-13",7571115,13608633
+"An Alan Smithee Film: Burn Hollywood …",2019-02-27,"Comedy","R",45779,82277
+"Meet the Deedles",2019-03-27,"Comedy","PG",4356126,7829877
+"He Got Game",2019-05-01,"Drama","R",21567853,38766948
+"The Horse Whisperer",2019-05-15,"Drama","PG-13",75383563,135497531
+"Six Days, Seven Nights",2019-06-12,"Romantic Comedy","PG-13",74339294,133620516
+"Mulan",2019-06-19,"Adventure","G",120620254,216807832
+"Armageddon",2019-07-01,"Adventure","PG-13",201578182,362324957
+"Jane Austen's Mafia",2019-07-24,"Comedy","PG-13",19843795,35668055
+"The Parent Trap",2019-07-29,"Comedy","PG",66308518,119185667
+"Firelight",2019-09-04,"Drama","R",784419,1409943
+"Simon Birch",2019-09-11,"Drama","PG",18253415,32809442
+"Holy Man",2019-10-09,"Comedy","PG",12069719,21694605
+"Beloved",2019-10-16,"Drama","R",22852487,41062682
+"The Waterboy",2019-11-06,"Comedy","PG-13",161491646,288691833
+"I'll Be Home For Christmas",2019-11-13,"Comedy","PG",12214338,21941840
+"A Bug's Life",2019-11-20,"Adventure","G",162798565,288981698
+"Enemy of the State",2019-11-20,"Action","R",111549836,198472008
+"Rushmore",2019-12-11,"Black Comedy","R",17105219,28392518
+"A Civil Action",2019-12-25,"Drama","PG-13",56709981,94139530
+"Mighty Joe Young",2019-12-25,"Adventure","PG",50632037,87906042
+"My Favorite Martian",2019-02-12,"Comedy","PG",36850101,61150849
+"The Other Sister",2019-02-26,"Romantic Comedy","PG-13",27807627,46145331
+"Doug's 1st Movie",2019-03-26,"Adventure","G",19421271,32228598
+"Ten Things I Hate About You",2019-03-31,"Romantic Comedy","PG-13",38177966,63354375
+"Endurance",2019-05-14,NA,"PG",229128,380218
+"Instinct",2019-06-04,"Drama","R",34105207,56595842
+"Tarzan",2019-06-16,"Adventure","G",171091819,283900254
+"Summer of Sam",2019-07-02,"Drama","R",19288130,32007656
+"Inspector Gadget",2019-07-23,"Comedy","PG",97387965,161610341
+"The Sixth Sense",2019-08-06,"Thriller/Suspense","PG-13",293506292,485424724
+"The 13th Warrior",2019-08-27,"Action","R",32698899,54262148
+"Breakfast of Champions",2019-09-17,"Comedy","R",178287,295851
+"Mumford",2019-09-24,"Comedy","R",4559569,7566363
+"Mystery, Alaska",2019-10-01,"Comedy","R",8891623,14755189
+"The Straight Story",2019-10-15,"Drama","G",6197866,10111144
+"The Insider",2019-11-05,"Drama","R",28965197,47794214
+"Toy Story 2",2019-11-19,"Adventure","G",245852179,404450426
+"Cradle Will Rock",2019-12-08,"Drama","R",2899970,4609153
+"Deuce Bigalow: Male Gigolo",2019-12-10,"Comedy","R",65535067,106921374
+"Bicentennial Man",2019-12-17,"Drama","PG",58220776,94838225
+"Play it to the Bone",2019-12-24,"Comedy","R",8427204,13180524
+"Fantasia 2000 (IMAX)",2020-01-01,"Musical","G",60507228,94852354
+"Gun Shy",2020-02-04,"Comedy","R",1638202,2562155
+"The Tigger Movie",2020-02-11,"Adventure","G",45542421,71228678
+"Mission to Mars",2020-03-10,"Adventure","PG",60874615,95208344
+"High Fidelity",2020-03-31,"Comedy","R",27277055,42661516
+"Keeping the Faith",2020-04-14,"Romantic Comedy","PG-13",37036404,57925202
+"Dinosaur",2020-05-19,"Adventure","PG",137748063,215438985
+"Shanghai Noon",2020-05-26,"Western","PG-13",56932305,89042541
+"Gone in 60 Seconds",2020-06-09,"Action","PG-13",101643008,158970411
+"Fantasia 2000 (Theatrical Release)",2020-06-16,"Musical","G",9103630,14238144
+"The Kid",2020-07-07,"Comedy","PG",69688384,108993148
+"Coyote Ugly",2020-08-04,"Drama","PG-13",60786269,95070168
+"The Crew",2020-08-25,"Comedy","PG-13",13019253,20362201
+"Duets",2020-09-15,"Drama","R",4734235,7404372
+"Remember the Titans",2020-09-29,"Drama","PG",115654751,180742479
+"Unbreakable",2020-11-22,"Thriller/Suspense","PG-13",94999143,148208901
+"102 Dalmatians",2020-11-22,"Comedy","G",66941559,104055039
+"The Emperor's New Groove",2020-12-15,"Adventure","G",89296573,136789252
+"O Brother, Where Art Thou?",2020-12-22,"Comedy","PG-13",45506619,67922002
+"Double Take",2020-01-12,"Action","PG-13",29823162,44418589
+"Recess: School's Out",2020-02-16,"Comedy","G",36696761,54656124
+"Just Visiting",2020-04-06,"Comedy","PG-13",4777007,7114869
+"Pearl Harbor",2020-05-25,"Action","PG-13",198539855,295705112
+"Atlantis: The Lost Empire",2020-06-08,"Adventure","PG",84052762,125188122
+"crazy/beautiful",2020-06-29,"Drama","PG-13",16929123,25214223
+"The Princess Diaries",2020-08-03,"Comedy","G",108244774,161218928
+"Bubble Boy",2020-08-24,"Comedy","PG-13",5002310,7450434
+"Max Keeble's Big Move",2020-10-05,"Comedy","PG",17292381,25749730
+"Corky Romano",2020-10-12,"Comedy","PG-13",23978402,35705805
+"High Heels and Low Lifes",2020-10-26,NA,"R",226792,337782
+"Monsters, Inc.",2020-11-02,"Adventure","G",289423425,416073179
+"Out Cold",2020-11-21,"Comedy","PG-13",13906394,20700691
+"The Royal Tenenbaums",2020-12-14,"Black Comedy","R",52353636,76758193
+"Beauty and the Beast (IMAX)",2020-01-01,"Musical","G",25487028,36980311
+"Frank McKlusky C.I.",2020-01-01,NA,NA,0,0
+"Snow Dogs",2020-01-18,"Comedy","PG",81150692,117745317
+"The Count of Monte Cristo",2020-01-25,"Drama","PG-13",54228104,78682079
+"Peter Pan: Return to Neverland",2020-02-15,"Adventure","G",48430258,70269715
+"Reign of Fire",2020-02-19,"Action","PG-13",43061982,62480631
+"Sorority Boys",2020-03-22,"Comedy","R",10198766,14797862
+"The Rookie",2020-03-29,"Drama","G",75600072,109691666
+"Big Trouble",2020-04-05,"Comedy","PG-13",7262288,10537188
+"ESPN's Ultimate X - The Movie",2020-05-10,"Documentary","PG",4197175,6089874
+"Bad Company",2020-06-07,"Action","PG-13",30157016,43756218
+"Lilo & Stitch",2020-06-21,"Adventure","PG",145771527,211506702
+"The Country Bears",2020-07-26,"Adventure","G",16988996,24650121
+"Signs",2020-08-02,"Thriller/Suspense","PG-13",227965690,330754439
+"Sen to Chihiro no Kamikakushi",2020-09-20,"Adventure","PG",10049886,14338992
+"Sweet Home Alabama",2020-09-27,"Comedy","PG-13",127214072,184521151
+"Moonlight Mile",2020-09-27,"Drama","PG-13",6830957,9909094
+"Tuck Everlasting",2020-10-11,"Drama","PG",19161999,27789959
+"The Santa Clause 2",2020-11-01,"Comedy","G",139225854,201959095
+"Treasure Planet",2020-11-27,"Adventure","PG",38120554,55189145
+"The Hot Chick",2020-12-13,"Comedy","PG-13",35081550,50624654
+"25th Hour",2020-12-19,"Drama","R",13084595,18325463
+"The Recruit",2020-01-31,"Thriller/Suspense","PG-13",52784696,73793522
+"Shanghai Knights",2020-02-07,"Adventure","PG-13",60470220,84537962
+"The Jungle Book 2",2020-02-14,"Adventure","G",47901582,66966883
+"Bringing Down the House",2020-03-07,"Comedy","PG-13",132675402,185481530
+"Piglet's Big Movie",2020-03-21,"Comedy","G",23103423,32298812
+"Ghosts of the Abyss",2020-04-11,"Documentary","G",17093668,23803108
+"Holes",2020-04-18,"Drama","PG",67383924,94203395
+"The Lizzie McGuire Movie",2020-05-02,"Comedy","PG",42734455,59743191
+"Finding Nemo",2020-05-30,"Adventure","G",380529370,518148559
+"Pirates of the Caribbean: The Curse o…",2020-07-09,"Adventure","PG-13",305411224,426967926
+"Freaky Friday",2020-08-06,"Comedy","PG",110222438,154090360
+"Open Range",2020-08-15,"Western","R",58331254,81547672
+"Cold Creek Manor",2020-09-19,"Thriller/Suspense","R",21384035,29895090
+"Under the Tuscan Sun",2020-09-26,"Comedy","PG-13",43601508,60944053
+"Veronica Guerin",2020-10-17,"Drama","R",1569918,2194759
+"Brother Bear",2020-10-24,"Adventure","G",85336277,119218333
+"The Haunted Mansion",2020-11-26,"Comedy","PG",75817994,105775678
+"Calendar Girls",2020-12-19,"Comedy","PG-13",31011616,42379650
+"Young Black Stallion",2020-12-25,"Adventure","G",6751389,9254344
+"Teacher's Pet: The Movie",2020-01-16,"Comedy","PG",6491969,8812764
+"Miracle",2020-02-06,"Drama","PG",64378093,87392478
+"Confessions of a Teenage Drama Queen",2020-02-20,"Comedy","PG",29331068,39816568
+"Hidalgo",2020-03-05,"Western","PG-13",67286731,91340921
+"The Ladykillers",2020-03-26,"Comedy","R",39692139,53881593
+"Home on the Range",2020-04-02,"Comedy","PG",50026353,67910166
+"The Alamo",2020-04-09,"Western","PG-13",22406362,30416359
+"Raising Helen",2020-05-28,"Comedy","PG-13",37485528,50886144
+"Around the World in 80 Days",2020-06-16,"Adventure","PG",24004159,32585356
+"America's Heart and Soul",2020-07-02,"Documentary","Not Rated",314000,426246
+"King Arthur",2020-07-07,"Adventure","PG-13",51877963,70423706
+"The Village",2020-07-30,"Thriller/Suspense","PG-13",114197520,155021748
+"The Princess Diaries 2: Royal Engagement",2020-08-11,"Romantic Comedy","G",95149435,129164207
+"Mr. 3000",2020-09-17,"Comedy","PG-13",21800302,29593641
+"The Last Shot",2020-09-24,"Comedy","R",463730,629502
+"Ladder 49",2020-10-01,"Action","PG-13",74541707,101161045
+"The Incredibles",2020-11-05,"Adventure","PG",261441092,354488708
+"National Treasure",2020-11-19,"Adventure","PG",173005002,234069353
+"The Life Aquatic with Steve Zissou",2020-12-10,"Comedy","R",24006726,32198655
+"Aliens of the Deep",2020-01-28,"Documentary","G",8968684,11740942
+"Pooh's Heffalump Movie",2020-02-11,"Adventure","G",18098433,23801835
+"The Pacifier",2020-03-04,"Comedy","PG",113006880,148619029
+"Ice Princess",2020-03-18,"Comedy","G",24381334,32064685
+"A Lot Like Love",2020-04-22,"Comedy","PG-13",21835784,28716947
+"The Hitchhiker's Guide to the Galaxy",2020-04-29,"Comedy","PG",51019112,67096891
+"Hauru no ugoku shiro",2020-06-10,"Adventure","PG",4710455,6194870
+"Herbie: Fully Loaded",2020-06-22,"Comedy","G",66010682,86812798
+"Dark Water",2020-07-08,"Thriller/Suspense","PG-13",25473093,33500491
+"Sky High",2020-07-29,"Adventure","PG",63939454,84088854
+"Valiant",2020-08-19,"Adventure","G",19478106,25616292
+"Flightplan",2020-09-23,"Thriller/Suspense","PG-13",89706988,117960425
+"The Greatest Game Ever Played",2020-09-30,"Drama","PG",15331289,20162672
+"Shopgirl",2020-10-21,"Drama","R",10284523,13519621
+"Chicken Little",2020-11-04,"Adventure","G",135386665,177954661
+"The Chronicles of Narnia: The Lion, t…",2020-12-09,"Adventure","PG",291710957,381557539
+"Casanova",2020-12-25,"Drama","R",11304403,14574087
+"Glory Road",2020-01-13,"Drama","PG",42647449,54888236
+"Annapolis",2020-01-27,"Drama","PG-13",17127992,22044113
+"Roving Mars",2020-01-27,"Documentary","G",10407978,12948025
+"Eight Below",2020-02-17,"Adventure","PG",81612565,105037235
+"The Shaggy Dog",2020-03-10,"Comedy","PG",61123569,78667428
+"Stay Alive",2020-03-24,"Horror","PG-13",23086480,29712825
+"The Wild",2020-04-14,"Adventure","G",37384046,48114115
+"Stick It",2020-04-28,"Comedy","PG-13",26910736,34634731
+"Goal! The Dream Begins",2020-05-12,"Drama","PG",4283255,5512647
+"Cars",2020-06-09,"Comedy","G",244082982,314140384
+"Pirates of the Caribbean: Dead Man’…",2020-07-07,"Adventure","PG-13",423315812,544817142
+"Step Up",2020-08-11,"Drama","PG-13",65328121,84078780
+"Invincible",2020-08-25,"Drama","PG",57806952,74398864
+"The Guardian",2020-09-29,"Action","PG-13",55011732,70801353
+"The Prestige",2020-10-20,"Thriller/Suspense","PG-13",53089891,68289913
+"Tim Burton's The Nightmare Before Chr…",2020-10-20,"Musical","PG",24732041,30737517
+"The Santa Clause 3: The Escape Clause",2020-11-03,"Comedy","G",84500122,108694869
+"Déjà Vu",2020-11-22,"Thriller/Suspense","PG-13",64038616,82267038
+"Apocalypto",2020-12-08,"Adventure","R",50866635,64959548
+"Primeval",2020-01-12,"Adventure","R",10597734,12985302
+"Bridge to Terabithia",2020-02-16,"Drama","PG",82234139,100760721
+"Wild Hogs",2020-03-02,"Comedy","PG-13",168213584,206110533
+"Meet the Robinsons",2020-03-30,"Adventure","G",97822171,119860589
+"The Lookout",2020-03-30,"Drama","R",4600585,5637048
+"The Hoax",2020-04-06,"Drama","R",7164995,8779196
+"The Invisible",2020-04-27,"Thriller/Suspense","PG-13",20568319,25202168
+"Pirates of the Caribbean: At World’…",2020-05-24,"Adventure","PG-13",309420425,379129960
+"Ratatouille",2020-06-29,"Comedy","G",206445654,252955933
+"Underdog",2020-08-03,"Adventure","PG",43760605,53619462
+"The Game Plan",2020-09-22,"Comedy","PG",90648202,111010758
+"Dan in Real Life",2020-10-20,"Romantic Comedy","PG-13",47642963,58350234
+"Enchanted",2020-11-21,"Romantic Comedy","PG",127706877,156074310
+"National Treasure 2: Book of Secrets",2020-12-21,"Adventure","PG",219961501,267003525
+"Hannah Montana/Miley Cyrus: Best of B…",2020-02-01,"Concert/Performance","G",65281781,76646993
+"Step Up 2 the Streets",2020-02-14,"Drama","PG-13",58017783,68118371
+"College Road Trip",2020-03-07,"Comedy","G",45610425,53550960
+"The Chronicles of Narnia: Prince Caspian",2020-05-16,"Adventure","PG",141621490,166277038
+"WALL-E",2020-06-27,"Adventure","G",223808164,262771918
+"Swing Vote",2020-08-01,"Comedy","PG-13",16289867,19125841
+"Goal! 2: Living the Dream...",2020-08-29,"Drama","PG-13",225067,264247
+"Miracle at St. Anna",2020-09-26,"Drama","R",7916887,9295171
+"Beverly Hills Chihuahua",2020-10-03,"Comedy","PG",94514402,110932022
+"Morning Light",2020-10-17,"Documentary","PG",275093,322979
+"High School Musical 3: Senior Year",2020-10-24,"Musical","G",90559416,106308538
+"Bolt",2020-11-21,"Comedy","PG",114053759,133702498
+"Bedtime Stories",2020-12-25,"Comedy","PG",110101975,128039679
+"Confessions of a Shopaholic",2020-02-13,"Romantic Comedy","PG",44277350,49767744
+"Jonas Brothers: The 3D Concert Experi…",2020-02-27,"Concert/Performance","G",38174685,38174685
+"Race to Witch Mountain",2020-03-13,"Adventure","PG",67172594,75501997
+"Hannah Montana the Movie",2020-04-10,"Drama","G",79576189,89443640
+"Earth",2020-04-22,"Documentary","G",32011576,35981010
+"Up",2020-05-29,"Adventure","PG",293004164,329336681
+"The Proposal",2020-06-19,"Romantic Comedy","PG-13",163958031,184288829
+"G-Force",2020-07-24,"Adventure","PG",119436770,134246932
+"Gake no ue no Ponyo",2020-08-14,"Adventure","G",15090399,16961607
+"X Games 3D: The Movie",2020-08-21,"Documentary","PG",1391434,1563976
+"Walt and El Grupo",2020-09-10,"Documentary","PG",20521,23064
+"Surrogates",2020-09-25,"Action","PG-13",38577772,43361416
+"Toy Story 3D Double Feature",2020-10-02,"Adventure","G",30702446,34509545
+"Disney's A Christmas Carol",2020-11-06,"Drama","PG",137855863,154927105
+"The Princess and the Frog",2020-11-25,"Adventure","G",104400899,116316457
+"Old Dogs",2020-11-25,"Comedy","PG",49492060,55503929
+"When in Rome",2020-01-29,"Romantic Comedy","PG-13",32680633,34917330
+"Alice in Wonderland",2020-03-05,"Adventure","PG",334191110,357063499
+"Waking Sleeping Beauty",2020-03-26,"Documentary","PG",80741,86264
+"The Last Song",2020-03-31,"Drama","PG",62950384,67258772
+"Oceans",2020-04-22,"Documentary","G",19422319,20751600
+"Prince of Persia: Sands of Time",2020-05-28,"Action","PG-13",90759676,96971361
+"Toy Story 3",2020-06-18,"Adventure","G",415004880,443408255
+"The Sorcerer's Apprentice",2020-07-14,"Adventure","PG",63150991,67473105
+"Step Up 3D",2020-08-06,"Drama","PG-13",42400223,45302137
+"Gedo Senki (Tales from Earthsea)",2020-08-13,"Adventure","PG-13",48658,51988
+"You Again",2020-09-24,"Comedy","PG",25702053,27461121
+"Secretariat",2020-10-08,"Drama","PG",59699513,63781920
+"Tangled",2020-11-24,"Adventure","PG",200821936,214388548
+"Tron: Legacy",2020-12-17,"Adventure","PG",172062763,183619259
+"Gnomeo and Juliet",2020-02-11,"Comedy","G",99967670,106270797
+"I am Number Four",2020-02-18,"Adventure","PG-13",55100437,58574607
+"Mars Needs Moms",2020-03-11,"Adventure","PG",21392758,22741603
+"African Cats",2020-04-22,"Documentary","G",15428747,16401551
+"Zokkomon",2020-04-22,"Adventure","PG",2815,2984
+"Prom",2020-04-29,"Comedy","PG",10130219,10768946
+"Pirates of the Caribbean: On Stranger…",2020-05-20,"Adventure","PG-13",241063875,256263359
+"Cars 2",2020-06-24,"Adventure","G",191450875,203522177
+"Winnie the Pooh",2020-07-15,"Adventure","G",26692846,28375869
+"The Help",2020-08-10,"Drama","PG-13",169705587,180404976
+"Fright Night",2020-08-19,"Horror","R",18298649,19452402
+"Real Steel",2020-10-07,"Action","PG-13",85463309,90848019
+"The Muppets",2020-11-23,"Comedy","PG",88625922,94189503
+"War Horse",2020-12-25,"Drama","PG-13",79883359,84762149
+"The Secret World of Arietty",2020-02-17,"Adventure","G",19192510,20325733
+"John Carter",2020-03-09,"Adventure","PG-13",73058679,77372445
+"Chimpanzee",2020-04-20,"Documentary","G",28965459,30675725
+"The Avengers",2020-05-04,"Action","PG-13",623279547,660081224
+"Brave",2020-06-22,"Adventure","PG",237282182,251292441
+"People Like Us",2020-06-29,"Drama","PG-13",12431792,13165822
+"The Odd Life of Timothy Green",2020-08-15,"Drama","PG",51853450,54914942
+"Frankenweenie",2020-10-05,"Comedy","PG",35287788,37363513
+"Wreck-It Ralph",2020-11-02,"Adventure","PG",189412677,200354959
+"Lincoln",2020-11-09,"Drama","PG-13",182207973,192122330
+"Oz the Great and Powerful",2020-03-08,"Adventure","PG",234770996,243434130
+"Iron Man 3",2020-05-03,"Action","PG-13",408992272,424084233
+"Monsters University",2020-06-21,"Adventure","G",268488329,278395641
+"The Lone Ranger",2020-07-02,"Western","PG-13",89302115,92597388
+"Disney Planes",2020-08-09,"Comedy","PG",90282580,93614037
+"The Fifth Estate",2020-10-18,"Drama","R",3254172,3374251
+"Thor: The Dark World",2020-11-08,"Adventure","PG-13",206362140,213962184
+"Kaze Tachinu",2020-11-08,"Drama","PG-13",5201879,5367415
+"Frozen",2020-11-22,"Adventure","PG",400738009,414997174
+"Delivery Man",2020-11-22,"Comedy","PG-13",30659817,31787136
+"Saving Mr. Banks",2020-12-13,"Drama","PG-13",83299761,86249969
+"Need for Speed",2020-03-14,"Action","PG-13",43568507,44955015
+"Muppets Most Wanted",2020-03-21,"Comedy","PG",51178893,52807594
+"Captain America: The Winter Soldier",2020-04-04,"Action","PG-13",259746958,268013076
+"Bears",2020-04-18,"Documentary","G",17780194,18346024
+"Million Dollar Arm",2020-05-10,"Drama","PG",36447959,37607865
+"Maleficent",2020-05-30,"Adventure","PG",241407328,249089809
+"Planes: Fire and Rescue",2020-07-18,"Adventure","PG",59157732,61040349
+"Guardians of the Galaxy",2020-08-01,"Adventure","PG-13",333172112,343771168
+"The Hundred-Foot Journey",2020-08-08,"Romantic Comedy","PG",54235441,55961409
+"Alexander and the Terrible, Horrible,…",2020-10-10,"Comedy","PG",66954149,69055550
+"Big Hero 6",2020-11-07,"Adventure","PG",222527828,229249222
+"Into the Woods",2020-12-25,"Musical","PG",128002372,130894237
+"Strange Magic",2020-01-23,"Adventure","PG",12429583,12429583
+"McFarland, USA",2020-02-20,"Drama","PG",44480275,44480275
+"Cinderella",2020-03-13,"Drama","PG",201151353,201151353
+"Monkey Kingdom",2020-04-17,"Documentary","G",16432322,16432322
+"Avengers: Age of Ultron",2020-05-01,"Action","PG-13",459005868,459005868
+"Tomorrowland",2020-05-22,"Adventure","PG",93436322,93436322
+"Inside Out",2020-06-19,"Adventure","PG",356461711,356461711
+"Ant-Man",2020-07-17,"Action","PG-13",180202163,180202163
+"Bridge of Spies",2020-10-16,"Thriller/Suspense","PG-13",72313754,72313754
+"The Good Dinosaur",2020-11-25,"Adventure","PG",123087120,123087120
+"Star Wars Ep. VII: The Force Awakens",2020-12-18,"Adventure","PG-13",936662225,936662225
+"The Finest Hours",2020-01-29,"Thriller/Suspense","PG",27569558,27569558
+"Zootopia",2020-03-04,"Adventure","PG",341268248,341268248
+"The Jungle Book",2020-04-15,"Adventure","PG",364001123,364001123
+"A Beautiful Planet",2020-04-29,"Documentary","G",7895708,7895708
+"Captain America: Civil War",2020-05-06,"Action","PG-13",408084349,408084349
+"Alice Through the Looking Glass",2020-05-27,"Adventure","PG",77042381,77042381
+"Finding Dory",2020-06-17,"Adventure","PG",486295561,486295561
+"The BFG",2020-07-01,"Adventure","PG",55483770,55483770
+"Pete’s Dragon",2020-08-12,"Adventure","PG",76233151,76233151
+"The Light Between Oceans",2020-09-02,"Drama","PG-13",12545979,12545979
+"Queen of Katwe",2020-09-23,"Drama","PG",8874389,8874389
+"Doctor Strange",2020-11-04,"Adventure","PG-13",232532923,232532923
+"Moana",2020-11-23,"Adventure","PG",246082029,246082029
+"Rogue One: A Star Wars Story",2020-12-16,"Adventure","PG-13",529483936,529483936
