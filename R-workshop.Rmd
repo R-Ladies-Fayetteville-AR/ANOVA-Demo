@@ -10,6 +10,7 @@ output: html_document
 ```{r}
 
 load(file = "Movie Data.Rdata")
+head(movie_data)
 
 ```
 
@@ -32,14 +33,33 @@ str(movie_data)
 ```{r}
 summary(movie_data)
 
+# looks like we havve NAs (no value) in the genre category which we are interested in
+
+movie_data <- movie_data[complete.cases(movie_data$genre),]
+summary(movie_data)
+
 ```
 
-#adding in new test for github upload
+```{r}
+
+# we should only look at genres with adequate samples
+xtabs(~genre, data = movie_data)
+
+#Black Comedy, Concert/Performance, Horror, and Western have less than 10 cases...
+
+movie_data <- subset()
+
+```
+
+# What is a package?
+# What is a boxplot?
 
 ```{r}
 
 library("tidyverse")
 
-boxplot(total_gross ~ genre, data = movie_data)
+ggplot(data = movie_data) +
+  geom_boxplot(aes(x = genre, y = total_gross)) +
+  theme(axis.text.x  = element_text(angle=75, vjust=0.7, size=9))
 
 ```
