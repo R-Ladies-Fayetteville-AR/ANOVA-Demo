@@ -1,6 +1,11 @@
-# Intro to R workshop working script
+### Intro to R workshop script cleaned up
+
+
+############# Section 1 ##########################
 
 ############# Programming in R intro #############
+
+############# authored by Stephanie Long
 
 ## R in its most basic form can be used as a calculator:
 
@@ -76,8 +81,8 @@ typeof(my_list)
 # 1 matrix (contains rows and columns)
 
 my_matrix <- matrix(data = c(1, 2, 3,
-              4, 5, 6,
-              7, 8, 9), nrow = 3, ncol = 3)
+                             4, 5, 6,
+                             7, 8, 9), nrow = 3, ncol = 3)
 my_matrix
 str(my_matrix)
 
@@ -89,9 +94,11 @@ str(my_dataframe)
 my_dataframe$V1
 
 
-#################
+############# Section 2 ##########################
 
 ##### ANOVA INFO ###### 
+
+##### Authored by Morgan Middlebrooks
 
 #  Understand what an ANOVA is even doing/ what sort of data is appropriate for it. 
 
@@ -225,7 +232,14 @@ bp <- ggplot(anova.df.out, aes(genre, total_gross)) +
 
 
 
+############# Section 3 ##########################
+
 ######## Data Visualization of Movie Genre Revenue ###########
+
+######## Authored by Stephanie Long
+
+
+# we will continue to use the movie_data
 
 # removing genre groups with less than 10 movies
 large_sample_genre <- filter(movie_data, genre != "Black Comedy" & genre != "Concert/Performance" & genre != "Horror" & genre != "Western")
@@ -237,7 +251,7 @@ large_sample_genre$adj_gross_billion <- large_sample_genre$inflation_adjusted_gr
 
 ##### Plot 1: simple boxplot
 
-ggplot(data = large_sample_genre) +
+plot1 <- ggplot(data = large_sample_genre) +
   geom_boxplot(aes(x = genre, 
                    y = total_gross_billion, 
                    fill = genre)) +
@@ -247,164 +261,79 @@ ggplot(data = large_sample_genre) +
   labs(x = "Genre Category", 
        y = "Total Gross Revenue (Billions)",
        title = "Movie Genre Total Gross Revenue")
+plot1
 
-##### Plot 2: plot bar graphs of total gross vs adjusted
+ggsave("Movie Genre Boxplot.jpeg", plot1)
 
-### first section using sum data
 
-#need to sum within the genre category to get the totals for each
-total_sum <- aggregate(total_gross_billion ~ genre,data = large_sample_genre, sum)
-adj_sum <- aggregate(adj_gross_billion ~ genre, data = large_sample_genre, sum)
-#combine the two revenue types
-genre_sum <- merge(total_sum, adj_sum, by = "genre")
+##### Plot 2: two barplots together
 
-#convert to "long" format for graph
-pivot_genre_sum <- pivot_longer(genre_sum, cols = c('total_gross_billion', 'adj_gross_billion'), names_to='Revenue_Type', 
-                                values_to="Revenue")
-#bar graph
-ggplot(data = pivot_genre_sum, aes(x = genre, y = Revenue, fill = Revenue_Type)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  theme(axis.text.x  = element_text(angle=75, vjust=0.7, size=9)) +
-  scale_fill_discrete(labels = c("Inflation Adjusted Gross","Total Gross")) +
-  labs(x = "Genre Category", y = "Gross Revenue (Billions)", fill = "Revenue Type")
+#loading in cleaned data for plot
+load("Plot 2 cleaned data.Rdata")
 
-# or using facets
-pivot_genre_sum$Revenue_Type <- as.factor(pivot_genre_sum$Revenue_Type)
-levels(pivot_genre_sum$Revenue_Type) = c("Inflation Adjusted","Total")
-ggplot(data = pivot_genre_sum, aes(x = genre, y = Revenue, fill = Revenue_Type)) +
+plot2 <- ggplot(data = plot_data2, aes(x = genre, 
+                              y = MRevenue, 
+                              fill = Revenue_Type)) +
   geom_bar(stat = "identity", position = "dodge") +
   theme_bw() +
   theme(axis.text.x  = element_text(angle=75, vjust=0.5, size=9),
         legend.position = "none") +
   facet_wrap(~Revenue_Type ~.) +
-  labs(x = "Genre Category", y = "Gross Revenue (Billions)", fill = "Revenue Type")
-
-### wanted to try with means instead of sums and add error bars based on standard error
-
-#need to mean within the genre category to get the mean totals for each
-total_mean <- aggregate(total_gross_billion ~ genre,data = large_sample_genre, mean)
-adj_mean <- aggregate(adj_gross_billion ~ genre, data = large_sample_genre, mean)
-total_sd <- aggregate(total_gross_billion ~ genre,data = large_sample_genre, sd)
-adj_sd <- aggregate(adj_gross_billion ~ genre, data = large_sample_genre, sd)
-total_se <- aggregate(total_gross_billion ~ genre,data = large_sample_genre, stderr)
-adj_se <- aggregate(adj_gross_billion ~ genre, data = large_sample_genre, stderr)
-colnames(adj_sd)[2] <- "adj_sd"
-colnames(total_sd)[2] <- "total_sd"
-adj_sd$se <- adj_sd$adj_sd/sqrt(length())
-
-#combine the two revenue types
-genre_mean <- merge(total_mean, adj_mean, by = "genre")
-genre_sd <- merge(total_sd, adj_sd, by = "genre")
-
-pivot_genre_mean <- pivot_longer(genre_mean, cols = c('total_gross_billion', 'adj_gross_billion'), names_to='Revenue_Type', 
-                                values_to="Revenue")
-
-pivot_genre_sd <- pivot_longer(genre_sd, cols = c('total_sd', 'adj_sd'), names_to='SD_Type', 
-                                 values_to="SD")
-
-pivot_genre <- cbind(pivot_genre_mean, pivot_genre_sd)
-pivot_genre[,4] <- NULL
-
-pivot_genre$Revenue_Type <- as.factor(pivot_genre$Revenue_Type)
-levels(pivot_genre$Revenue_Type) = c("Inflation Adjusted", "Total")
-
-plot_data <- large_sample_genre %>%
-  group_by(genre) %>%
-  summarise( 
-    n=n(),
-    total_mean=mean(total_gross_billion),
-    adj_mean=mean(adj_gross_billion),
-    total_sd=sd(total_gross_billion),
-    adj_sd=sd(adj_gross_billion)
-  ) %>%
-  mutate( total_se=total_sd/sqrt(n)) %>%
-  mutate(adj_se = adj_sd/sqrt(n))
-
-pivot_plot_data <- pivot_longer(plot_data, cols = c('total_mean', 'adj_mean'), names_to='Revenue_Type', 
-                                 values_to="MRevenue")
-pivot_plot_data_se <- pivot_longer(plot_data, cols = c('total_se', 'adj_se'), names_to='SE_Type', 
-                               values_to="SE")
-plot_data2 <- cbind(pivot_plot_data[,c(1, 7, 8)], pivot_plot_data_se[,7:8])
-plot_data2$Revenue_Type <- factor(plot_data2$Revenue_Type, labels = c("Inflation Adjusted", "Total")) 
-
-save(plot_data2, file = "Plot 2 cleaned data.Rdata")
-
-# ggplot(data = pivot_genre_mean, aes(x = genre, y = Revenue, fill = Revenue_Type)) +
-#   geom_bar(stat = "identity", position = "dodge") +
-#   theme_bw() +
-#   theme(axis.text.x  = element_text(angle=75, vjust=0.5, size=9),
-#         legend.position = "none") +
-#   facet_wrap(~Revenue_Type ~.) +
-#   labs(x = "Genre Category", y = "Mean Gross Revenue (Billions)", fill = "Revenue Type") +
-#   geom_errorbar(aes(ymin=Revenue-(sd(Revenue)/sqrt(length(genre))), ymax=Revenue+(sd(Revenue)/sqrt(length(genre)))), width=.2, position=position_dodge(.9)) 
-
-ggplot(data = plot_data2, aes(x = genre, y = MRevenue, fill = Revenue_Type)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  theme_bw() +
-  theme(axis.text.x  = element_text(angle=75, vjust=0.5, size=9),
-        legend.position = "none") +
-  facet_wrap(~Revenue_Type ~.) +
-  labs(x = "Genre Category", y = "Mean Gross Revenue (Billions)", fill = "Revenue Type") +
+  labs(x = "Genre Category", 
+       y = "Mean Gross Revenue (Billions)", 
+       fill = "Revenue Type") +
   geom_errorbar(aes(ymin=MRevenue-SE, ymax=MRevenue+SE), width=.2, position=position_dodge(.9))
+plot2
 
-# ggplot(data = plot_data, aes(x = genre, y = total_mean)) +
-#   geom_bar(stat = "identity", position = "dodge") +
-#   theme_bw() +
-#   theme(axis.text.x  = element_text(angle=75, vjust=0.5, size=9),
-#         legend.position = "none") +
-#   labs(x = "Genre Category", y = "Mean Gross Total Revenue (Billions)") +
-#   geom_errorbar(aes(ymin=total_mean-total_se, ymax=total_mean+total_se), width=.2, position=position_dodge(.9))
+ggsave("Comparing Mean Gross Revenue for Inflation Adjustment across Movie Genre.jpeg", plot2)
 
 
-### Plot 3: top 25 grossing movies
+### Plot 3: Comparison of Top 25 grossing movies
 
-library("patchwork")
+library("patchwork") # package for combining plots
 
+#pulling just the top 25 total grossing movies
 top_total_25 <- movie_data %>% 
   arrange(desc(total_gross)) %>%
   slice(1:25)
 
+#pulling just the top 25 grossing movies adjusted for inflation
 top_adj_25 <- movie_data %>% 
   arrange(desc(inflation_adjusted_gross)) %>%
   slice(1:25)
 
+#combining the data and converting for graphing (don't worry about this part)
 top_25 <- merge(top_total_25[,c(1,5)], top_adj_25[,c(1,6)], all = T, by = "movie_title")
 top_25_pivot <- pivot_longer(top_25, cols = c("total_gross", "inflation_adjusted_gross"), names_to = "Type", values_to = "Revenue")
 
-total <- ggplot(data = top_total_25, aes(x = reorder(movie_title, total_gross), y = (total_gross/1000000))) +
+# plot 3A
+total <- ggplot(data = top_total_25, 
+                aes(x = reorder(movie_title, total_gross), y = (total_gross/1000000))) +
   geom_bar(stat = "identity", position = "dodge", fill = "turquoise2") +
   theme_bw() +
   coord_flip() +
-  theme(axis.title.y = element_blank(), legend.position = "none",
-        title = element_text(hjust = 0.5))+
+  theme(axis.title.y = element_blank(), 
+        legend.position = "none",
+        plot.title = element_text(hjust = 0.5))+
   labs(y = "Total Revenue (Millions)",
        title = "Top 25 Movies Based on Total Revenue")
 total
 
-adj <- ggplot(data = top_adj_25, aes(x = reorder(movie_title, inflation_adjusted_gross), y = (inflation_adjusted_gross/1000000000))) +
+# plot 3B
+adj <- ggplot(data = top_adj_25, 
+              aes(x = reorder(movie_title, inflation_adjusted_gross), y = (inflation_adjusted_gross/1000000000))) +
   geom_bar(stat = "identity", position = "dodge", fill = "salmon") +
   theme_bw() +
   coord_flip() +
-  theme(axis.title.y = element_blank(), legend.position = "none",
-        title = element_text(hjust = 0.5))+
+  theme(axis.title.y = element_blank(), 
+        legend.position = "none",
+        plot.title = element_text(hjust = 0.5))+
   labs(y = "Total Revenue (Billions)",
        title = "Top 25 Movies Based on Inflation Adjusted Revenue")
 adj
 
-total | adj
+# combining plot 3A and 3B
+plot3 <- total | adj
+plot3
 
-
-# trying to keep colors consistent across facet, didn't really work well
-
-# library("tidytext")
-# all <- ggplot(data = top_25_pivot, aes(x = reorder_within(movie_title, Revenue, Type), y = (Revenue/1000000000), fill = movie_title)) +
-#   geom_bar(stat = "identity", position = "dodge") +
-#   theme_bw() +
-#   coord_flip() +
-#   facet_wrap(~Type, scales = "free") +
-#   theme(axis.title.y = element_blank(), legend.position = "none",
-#         title = element_text(hjust = 0.5))+
-#   scale_y_reordered() +
-#   labs(y = "Total Revenue (Billions)",
-#        title = "Top 25 Movies Based on Inflation Adjusted Revenue")
-# all
+ggsave("Comparing Top 25 Grossing Movies Adjusting for Inflation.jpeg", plot3, width = 20, height = 11)
