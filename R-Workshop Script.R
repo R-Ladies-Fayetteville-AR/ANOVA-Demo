@@ -125,7 +125,7 @@ library(ggplot2)
 
 ### Load the Data in ###
 
-load(file = "Movie Data.Rdata")
+load(file = "Workshop Data/Movie Data.Rdata")
 movie_data <- movie_data[complete.cases(movie_data$genre),]
 
 
@@ -313,7 +313,7 @@ ggsave("Movie Genre Boxplot.jpeg", plot1)
 ##### Plot 2: two barplots together ##########
 
 # loading in cleaned data for plot, this way it's already organized
-load("Plot 2 cleaned data.Rdata")
+load("Workshop Data/Plot 2 cleaned data.Rdata")
 str(plot_data2)
 
 # here we have mean gross revenue for both adjusted and non-adjusted for inflation for each genre

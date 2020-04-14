@@ -146,7 +146,7 @@ An ANOVA also wants the groups to have equal variance.
 library(tidyverse)
 
 # first we will load in our data
-load(file = "Movie Data.Rdata")
+load(file = "Workshop Data/Movie Data.Rdata")
 
 #shows us what's inside the data
 head(movie_data)
@@ -308,7 +308,7 @@ We'll start with a cleaned up and organized dataset created from the movie_data
 
 ```{r}
 
-load("Plot 2 cleaned data.Rdata")
+load("Workshop Data/Plot 2 cleaned data.Rdata")
 str(plot_data2)
 
 # same general set-up
