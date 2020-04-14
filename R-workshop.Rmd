@@ -134,13 +134,14 @@ my_dataframe$V1
 # Authored by Morgan Middlebrooks
 
 
-Understand what an ANOVA is even doing/ what sort of data is appropriate for it. 
+ First you need to understand what an ANOVA is even doing/ what sort of data is appropriate for it.
 
-It's important to understand what TYPE of data you need in ANOVA. An ANOVA is basically just seeing if there is statistically significant difference between the groups of a IV on some outcome variable. 
+An ANOVA is basically just seeing if there is statistically significant difference between the groups of a IV on some outcome variable.
 
-So you need the IV to be categorical and the DV to be continuous. 
+It's important to consider what TYPE of data you need in ANOVA. 
+You need the IV to be categorical (remember, we're comparing groups aka categories) and the DV needs to be continuous. 
 
-There are certain packages that will make this easier.
+## An ANOVA also wants the groups to have equal variance. 
 
 ```{r}
 library(tidyverse)
@@ -174,8 +175,7 @@ group_by(anova.df, genre) %>%
   summarise(
     count = n())
 
-boxplot(total_gross ~ genre, data = anova.df, main = "Gross Revenue",
-        ylab = "Total Gross Revenue", xlab = "Genre", col = "salmon")
+## Boxplot to look at outliers
 
 outlier.invest <- ggplot(anova.df, aes(genre, total_gross)) + 
   stat_boxplot(geom = 'errorbar') +
@@ -190,18 +190,19 @@ outlier.invest
 
 It looks like we have some pretty serious outliers. 
 
-Now we will demonstrate one way of removing outliers
+Now we will demonstrate one way of removing outliers. I want to emphasize that this is NOT the most statistically sound way. There are lots of other ways to consider outliers. We don't have time for a whole session on outliers & data cleaning. So this is just a quick and dirty way! 
 
 ```{r}
 
-outliers <- boxplot(anova.df$total_gross, plot=FALSE)$out
+outliers <- boxplot(anova.df$total_gross, plot=FALSE)$out  ## this saves a list of outliers 
 
-print(outliers)
+print(outliers)  ## This shows you each total_gross value that is an outlier in the list we just saved. We've got several...
 
-anova.df.out <- anova.df[-which(anova.df$total_gross %in% outliers),]
+anova.df.out <- anova.df[-which(anova.df$total_gross %in% outliers),] #this creates a data frame the removes those outliers. Notice the " - which "
+
+## Another boxplot to check if our work, worked out. 
 
 outlier.invest.2 <- ggplot(anova.df.out, aes(genre, total_gross)) + 
-  stat_boxplot(geom = 'errorbar') +
   geom_boxplot(fill = "steelblue", colour = "black", outlier.colour = "red", outlier.shape = 4) +
   ggtitle("Outlier Investigation") + 
   theme_classic() +
@@ -211,7 +212,7 @@ outlier.invest.2
 ```
 
 
-We still have some after a basic outlier removal that look like outliers, but were not classified this way. There are lots of fancy ways you can check if those are TRUE outliers (using Cook's d for example), but we're not doing that today.
+We still have some after a basic outlier removal that look like outliers, but were not classified using the above method. There are lots of fancy ways you can check if those are TRUE outliers (using Cook's d for example), but we're not doing that today.
 
 Notice how the bars are stretched more similarly now.
 
@@ -234,7 +235,7 @@ summary(mod)
 
 There is a difference in genre....but WHERE YOU ASK?
 
-Now we can do post-hoc tests to find where the significant difference in genres is.
+Now we can do post-hoc tests to find where the significant difference in genres is. 
 
 ```{r}
 
@@ -259,13 +260,13 @@ Check out boxplots below to really send message home that you're going to make m
 ```{r}
 ggplot(anova.df.out, aes(genre, total_gross)) + 
   stat_boxplot(geom = 'errorbar') +
-  geom_boxplot(fill = "steelblue", colour = "black", outlier.colour = "red", outlier.shape = 4) +
+  geom_boxplot(fill = "darkseagreen3", colour = "black", outlier.colour = "firebrick4", outlier.shape = 4) +
   ggtitle("Movie Monies") + 
   theme_classic() +
-  theme(plot.title = element_text(lineheight=.8, face="bold", hjust = .5, size = 12, colour = "red"))
+  theme(plot.title = element_text(lineheight=.8, face="bold", hjust = .5, size = 12, colour = "black"))
 ```
 
-Looking at this plot you can see that Adventure's mean is higher than both comedy and drama, but comedy and drama aren't that different.
+Looking at this plot (which is the same as investigation plot 2, btw. I've just change the labels here) you can see that Adventure's mean is higher than both comedy and drama, but comedy and drama aren't that different.
 
 # Section 3: Data Visualization of Movie Genre Revenue
 # Authored by Stephanie Long
