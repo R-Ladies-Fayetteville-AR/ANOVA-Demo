@@ -1,7 +1,7 @@
 ---
 title: "Intro to R-workshop"
 author: "Stephanie Long and Morgan Middlebrooks"
-date: "4/3/2020"
+date: "4/16/2020"
 output:
   pdf_document: default
   html_document: default
