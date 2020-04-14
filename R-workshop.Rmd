@@ -133,7 +133,7 @@ my_dataframe$V1
 # Authored by Morgan Middlebrooks
 
 
- First you need to understand what an ANOVA is even doing/ what sort of data is appropriate for it.
+First you need to understand what an ANOVA is even doing/ what sort of data is appropriate for it.
 
 An ANOVA is basically just seeing if there is statistically significant difference between the groups of a IV on some outcome variable.
 
@@ -327,7 +327,7 @@ plot2 <- ggplot(data = plot_data2,
 plot2
 ```
 
-Finally our third plot will compare the top 25 grossing movies comparing the adjusted and non-adjusted revenues.
+Our third plot will compare the top 25 grossing movies comparing the adjusted and non-adjusted revenues.
 
 ```{r}
 
@@ -383,3 +383,30 @@ adj
 # combining plot 3A and 3B
 plot3 <- total | adj
 plot3
+```
+
+
+Finally our fourth plot will display trend lines for each genre's inflation adjusted revenue over time.
+
+
+```{r}
+
+plot4 <- ggplot(data = large_sample_genre) +
+  geom_point(aes(x = release_date,   # here is where we add our data points
+                 y = inflation_adjusted_gross/1000000000, 
+                 color = genre)) +
+  geom_smooth(aes(x = release_date, 
+                  y = inflation_adjusted_gross/1000000000, 
+                  color = genre), 
+              method = "lm", se = F) + # adding a linear trendline based on "lm" or linear regression model
+  facet_wrap(~genre, scales = "free") + # adding individual graphs for each genre and allowing the y axis to scale for each
+  theme_bw() +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5)) +
+  labs(x = "Movie Release Date",
+       y = "Inflation Adjusted Gross Revenue (Billions)",
+       title = "Trends of Disney Revenue by Genre Over Time")
+plot4
+
+```
+
