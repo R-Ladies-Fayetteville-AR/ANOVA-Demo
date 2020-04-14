@@ -100,13 +100,19 @@ my_dataframe$V1
 
 ##### Authored by Morgan Middlebrooks
 
-#  Understand what an ANOVA is even doing/ what sort of data is appropriate for it. 
 
-## It's important to understand what TYPE of data you need in ANOVA. An ANOVA is
-## basically just seeing if there is statistically significant difference
-## between the groups of a IV on some outcome variable. 
+## First you need to understand what an ANOVA is even doing/ what sort of data
+## is appropriate for it.
 
-## So you need the IV to be categorical and the DV to be continuous. 
+## An ANOVA is basically just seeing if there is statistically significant
+## difference between the groups of a IV on some outcome variable.
+
+## It's important to consider what TYPE of data you need in ANOVA. You need the
+## IV to be categorical (remember, we're comparing groups aka categories) and
+## the DV needs to be continuous.
+
+
+## An ANOVA also wants the groups to have equal variance.
 
 ##### Libraries #####
 # install.packages("tidyverse")
@@ -143,8 +149,8 @@ group_by(anova.df, genre) %>%
   summarise(
     count = n())
 
-boxplot(total_gross ~ genre, data = anova.df, main = "Gross Revenue",
-        ylab = "Total Gross Revenue", xlab = "Genre", col = "salmon")
+
+## Boxplot to look at outliers
 
 outlier.invest <- ggplot(anova.df, aes(genre, total_gross)) + 
   stat_boxplot(geom = 'errorbar') +
@@ -157,14 +163,20 @@ outlier.invest
 
 ## looks like we have so pretty serious outliers. 
 
+## Now we will demonstrate one way of removing outliers. I want to emphasize
+## that this is NOT the most statistically sound way. There are lots of other
+## ways to consider outliers. We don't have time for a whole session on outliers
+## & data cleaning. So this is just a quick and dirty way!
 
 #### Dealing w/ Outliers...sort of #####
 
 outliers <- boxplot(anova.df$total_gross, plot=FALSE)$out
 
-print(outliers)
+print(outliers) ## This shows you each total_gross value that is an outlier in the list we just saved. We've got several...
 
-anova.df.out <- anova.df[-which(anova.df$total_gross %in% outliers),]
+anova.df.out <- anova.df[-which(anova.df$total_gross %in% outliers),] # this creates a data frame the removes those outliers. Notice the " - which "
+
+## Another boxplot to check if our work, worked out. 
 
 outlier.invest.2 <- ggplot(anova.df.out, aes(genre, total_gross)) + 
   stat_boxplot(geom = 'errorbar') +
@@ -182,6 +194,7 @@ outlier.invest.2
 
 ## Notice how the bars are stretched more similarly now. 
 
+## Now we will check the groups for equal variance since this is another important aspect of an ANOVA.
 
 #### Levene Test ####
 
@@ -190,6 +203,8 @@ car::leveneTest(total_gross ~ genre, data = anova.df.out)
 ## There is a difference, but barely. A better scientist would not let this
 ## slide. The groups should have equal variance!
 
+## Now we can move on to the ANOVA and interpretation.
+
 #### THE ANOVA FINALLY ####
 
 mod <- aov(total_gross ~ genre, data = anova.df.out)
@@ -197,6 +212,8 @@ mod <- aov(total_gross ~ genre, data = anova.df.out)
 summary(mod)
 
 ## There is a difference in genre....but WHERE YOU ASK?
+
+# Now we can do post-hoc tests to find where the significant difference in genres is. 
 
 #### Post Hoc ####
 
@@ -220,15 +237,16 @@ group_by(anova.df, genre) %>%
 ## Check out boxplots below to really send message home that you're going to
 ## make more money on adventure
 
-bp <- ggplot(anova.df.out, aes(genre, total_gross)) + 
+ggplot(anova.df.out, aes(genre, total_gross)) + 
   stat_boxplot(geom = 'errorbar') +
-  geom_boxplot(fill = "steelblue", colour = "black", outlier.colour = "red", outlier.shape = 4) +
+  geom_boxplot(fill = "darkseagreen3", colour = "black", outlier.colour = "firebrick4", outlier.shape = 4) +
   ggtitle("Movie Monies") + 
   theme_classic() +
-  theme(plot.title = element_text(lineheight=.8, face="bold", hjust = .5, size = 12, colour = "red"))
+  theme(plot.title = element_text(lineheight=.8, face="bold", hjust = .5, size = 12, colour = "black"))
 
-## looking at this plot you can see that Adventure's mean is higher than both
-## comedy and drama, but comedy and drama aren't that different
+## Looking at this plot (which is the same as investigation plot 2, btw. I've
+## just change the labels here) you can see that Adventure's mean is higher than
+## both comedy and drama, but comedy and drama aren't that different.
 
 
 
