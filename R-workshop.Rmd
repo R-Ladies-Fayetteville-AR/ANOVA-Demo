@@ -3,7 +3,6 @@ title: "Intro to R-workshop"
 author: "Stephanie Long and Morgan Middlebrooks"
 date: "4/16/2020"
 output:
-  pdf_document: default
   html_document: default
 ---
 
@@ -141,7 +140,7 @@ An ANOVA is basically just seeing if there is statistically significant differen
 It's important to consider what TYPE of data you need in ANOVA. 
 You need the IV to be categorical (remember, we're comparing groups aka categories) and the DV needs to be continuous. 
 
-## An ANOVA also wants the groups to have equal variance. 
+An ANOVA also wants the groups to have equal variance. 
 
 ```{r}
 library(tidyverse)
