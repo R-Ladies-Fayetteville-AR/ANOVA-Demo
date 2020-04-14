@@ -8,7 +8,7 @@ str(movie_data)
 #reformatting data
 
 #reformatting date
-movie_data$release_date <- as.Date(movie_data$release_date, format = "%b %d,%y")
+movie_data$release_date <- as.Date(movie_data$release_date, format = "%b %d,%Y")
 
 #reformatting money values
 movie_data$total_gross <- as.numeric(gsub('[$,]','',movie_data$total_gross))
