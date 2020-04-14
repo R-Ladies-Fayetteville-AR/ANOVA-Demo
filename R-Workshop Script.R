@@ -267,8 +267,33 @@ summary(large_sample_genre$genre)
 large_sample_genre$total_gross_billion <- large_sample_genre$total_gross/1000000000
 large_sample_genre$adj_gross_billion <- large_sample_genre$inflation_adjusted_gross/1000000000
 
-##### Plot 1: simple boxplot
+##### Plot 1: simple boxplot ############
 
+#first I'll show how each line contributes a layer to the graph:
+
+#this sets up our first layer with our dataset
+plot1a <- ggplot(data = large_sample_genre) # call our data layer to the plot
+plot1a
+
+#this layer adds our data in the form of a boxplot with an x axis, y axis and color for each
+plot1b <- plot1a + geom_boxplot(aes(x = genre, # adding our boxplot data, this line adds our x-axis
+                   y = total_gross_billion, # add our y-axis
+                   fill = genre)) # fill the boxes with color based on or genre groups
+plot1b
+
+#this layer changes a few elements of our default theme or background
+plot1c <- plot1b + theme(axis.text.x  = element_text(angle=75, vjust=0.5, size=9), # adjust the x-axis text so that it's angled and larger
+                         legend.position = "none", # remove the legend since you can see what groups the colors belong to
+                         plot.title = element_text(hjust = 0.5)) # adjust our title to be in the center
+plot1c
+
+#this layer changes our axis titles and our plot title
+plot1d <- plot1c + labs(x = "Genre Category", # re-title the x-axis label
+       y = "Total Gross Revenue (Billions)", # re-title the y-axis label
+       title = "Movie Genre Total Gross Revenue") # add the title
+plot1d
+
+## now this is the same code and it just combines all those layers into one plot using the "+" to layer them
 plot1 <- ggplot(data = large_sample_genre) + # call our data layer to the plot
   geom_boxplot(aes(x = genre, # adding our boxplot data, this line adds our x-axis
                    y = total_gross_billion, # add our y-axis
@@ -285,7 +310,7 @@ plot1
 ggsave("Movie Genre Boxplot.jpeg", plot1)
 
 
-##### Plot 2: two barplots together
+##### Plot 2: two barplots together ##########
 
 # loading in cleaned data for plot, this way it's already organized
 load("Plot 2 cleaned data.Rdata")
@@ -314,7 +339,29 @@ plot2
 ggsave("Comparing Mean Gross Revenue for Inflation Adjustment across Movie Genre.jpeg", plot2)
 
 
-### Plot 3: Comparison of Top 25 grossing movies
+###### Plot 3: Viewing linear trend lines over time ###########
+
+plot3 <- ggplot(data = large_sample_genre) +
+  geom_point(aes(x = release_date,   # here is where we add our data points
+                 y = inflation_adjusted_gross/1000000000, 
+                 color = genre)) +
+  geom_smooth(aes(x = release_date, 
+                  y = inflation_adjusted_gross/1000000000, 
+                  color = genre), 
+              method = "lm", se = F) + # adding a linear trendline based on "lm" or linear regression model
+  facet_wrap(~genre, scales = "free") + # adding individual graphs for each genre and allowing the y axis to scale for each
+  theme_bw() +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5)) +
+  labs(x = "Movie Release Date",
+       y = "Inflation Adjusted Gross Revenue (Billions)",
+       title = "Trends of Disney Revenue by Genre Over Time")
+plot3
+
+ggsave("Genre Trends Over Time.jpeg", plot3)
+
+
+### Plot 4: Comparison of Top 25 grossing movies ############
 
 library("patchwork") # package for combining plots
 
@@ -334,7 +381,7 @@ top_25_pivot <- pivot_longer(top_25, cols = c("total_gross", "inflation_adjusted
 
 # we're going to make two separate graphs of our top 25 movies and then combined them
 
-# plot 3A: top 25 based on "total_gross"
+# plot 4A: top 25 based on "total_gross"
 total <- ggplot(data = top_total_25, 
                 aes(x = reorder(movie_title, total_gross), # we can arrange our bars to be descending from greatest to least
                     y = (total_gross/1000000))) + # we can divide the y axis so it's showing Millions instead of Billions
@@ -348,7 +395,7 @@ total <- ggplot(data = top_total_25,
        title = "Top 25 Movies Based on Total Revenue")
 total
 
-# plot 3B: top 25 based on "inflation_adjusted_gross"
+# plot 4B: top 25 based on "inflation_adjusted_gross"
 adj <- ggplot(data = top_adj_25, 
               aes(x = reorder(movie_title, inflation_adjusted_gross), y = (inflation_adjusted_gross/1000000000))) +
   geom_bar(stat = "identity", position = "dodge", fill = "salmon") +
@@ -361,30 +408,9 @@ adj <- ggplot(data = top_adj_25,
        title = "Top 25 Movies Based on Inflation Adjusted Revenue")
 adj
 
-# combining plot 3A and 3B
-plot3 <- total | adj
-plot3
+# combining plot 4A and 4B
+plot4 <- total | adj
+plot4
 
 #save our plot
-ggsave("Comparing Top 25 Grossing Movies Adjusting for Inflation.jpeg", plot3, width = 20, height = 11)
-
-
-##### Plot 4: Trend lines
-
-plot4 <- ggplot(data = large_sample_genre) +
-  geom_point(aes(x = release_date,   # here is where we add our data points
-                 y = inflation_adjusted_gross/1000000000, 
-                 color = genre)) +
-  geom_smooth(aes(x = release_date, 
-                  y = inflation_adjusted_gross/1000000000, 
-                  color = genre), 
-              method = "lm", se = F) + # adding a linear trendline based on "lm" or linear regression model
-  facet_wrap(~genre, scales = "free") + # adding individual graphs for each genre and allowing the y axis to scale for each
-  theme_bw() +
-  theme(legend.position = "none",
-        plot.title = element_text(hjust = 0.5)) +
-  labs(x = "Movie Release Date",
-       y = "Inflation Adjusted Gross Revenue (Billions)",
-       title = "Trends of Disney Revenue by Genre Over Time")
-
-ggsave("Genre Trends Over Time.jpeg", plot4)
+ggsave("Comparing Top 25 Grossing Movies Adjusting for Inflation.jpeg", plot4, width = 20, height = 11)

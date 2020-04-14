@@ -327,7 +327,31 @@ plot2 <- ggplot(data = plot_data2,
 plot2
 ```
 
-Our third plot will compare the top 25 grossing movies comparing the adjusted and non-adjusted revenues.
+Our third plot will display trend lines for each genre's inflation adjusted revenue over time.
+
+
+```{r}
+
+plot3 <- ggplot(data = large_sample_genre) +
+  geom_point(aes(x = release_date,   # here is where we add our data points
+                 y = inflation_adjusted_gross/1000000000, 
+                 color = genre)) +
+  geom_smooth(aes(x = release_date, 
+                  y = inflation_adjusted_gross/1000000000, 
+                  color = genre), 
+              method = "lm", se = F) + # adding a linear trendline based on "lm" or linear regression model
+  facet_wrap(~genre, scales = "free") + # adding individual graphs for each genre and allowing the y axis to scale for each
+  theme_bw() +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5)) +
+  labs(x = "Movie Release Date",
+       y = "Inflation Adjusted Gross Revenue (Billions)",
+       title = "Trends of Disney Revenue by Genre Over Time")
+plot3
+
+```
+
+Finally, our fourth plot will compare the top 25 grossing movies comparing the adjusted and non-adjusted revenues.
 
 ```{r}
 
@@ -353,7 +377,7 @@ top_25_pivot <- pivot_longer(top_25, cols = c("total_gross", "inflation_adjusted
 
 # we're going to make two separate graphs of our top 25 movies and then combined them
 
-# plot 3A: top 25 based on "total_gross"
+# plot 4A: top 25 based on "total_gross"
 total <- ggplot(data = top_total_25, 
                 aes(x = reorder(movie_title, total_gross), # we can arrange our bars to be descending from greatest to least
                     y = (total_gross/1000000))) + # we can divide the y axis so it's showing Millions instead of Billions
@@ -367,7 +391,7 @@ total <- ggplot(data = top_total_25,
        title = "Top 25 Movies Based on Total Revenue")
 total
 
-# plot 3B: top 25 based on "inflation_adjusted_gross"
+# plot 4B: top 25 based on "inflation_adjusted_gross"
 adj <- ggplot(data = top_adj_25, 
               aes(x = reorder(movie_title, inflation_adjusted_gross), y = (inflation_adjusted_gross/1000000000))) +
   geom_bar(stat = "identity", position = "dodge", fill = "salmon") +
@@ -380,33 +404,8 @@ adj <- ggplot(data = top_adj_25,
        title = "Top 25 Movies Based on Inflation Adjusted Revenue")
 adj
 
-# combining plot 3A and 3B
-plot3 <- total | adj
-plot3
-```
-
-
-Finally our fourth plot will display trend lines for each genre's inflation adjusted revenue over time.
-
-
-```{r}
-
-plot4 <- ggplot(data = large_sample_genre) +
-  geom_point(aes(x = release_date,   # here is where we add our data points
-                 y = inflation_adjusted_gross/1000000000, 
-                 color = genre)) +
-  geom_smooth(aes(x = release_date, 
-                  y = inflation_adjusted_gross/1000000000, 
-                  color = genre), 
-              method = "lm", se = F) + # adding a linear trendline based on "lm" or linear regression model
-  facet_wrap(~genre, scales = "free") + # adding individual graphs for each genre and allowing the y axis to scale for each
-  theme_bw() +
-  theme(legend.position = "none",
-        plot.title = element_text(hjust = 0.5)) +
-  labs(x = "Movie Release Date",
-       y = "Inflation Adjusted Gross Revenue (Billions)",
-       title = "Trends of Disney Revenue by Genre Over Time")
+# combining plot 4A and 4B
+plot4 <- total | adj
 plot4
-
 ```
 
