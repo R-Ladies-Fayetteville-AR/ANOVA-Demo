@@ -506,7 +506,7 @@ my_dataframe$V1</code></pre>
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code># first we will load in our data
-load(file = &quot;Movie Data.Rdata&quot;)
+load(file = &quot;Workshop Data/Movie Data.Rdata&quot;)
 
 #shows us what's inside the data
 head(movie_data)</code></pre>
@@ -687,7 +687,7 @@ plot1</code></pre>
 <p>Our second plot will demonstrate two bar graphs including errorbars</p>
 <p>The plot will show mean gross revenue for both adjusted and non-adjusted for inflation for each genre and include standard error for revenue type across genres as errorbars. Standard error is a measurement of how much a sample mean deviates from the population mean and is pretty standard for plotting errorbars.</p>
 <p>We’ll start with a cleaned up and organized dataset created from the movie_data</p>
-<pre class="r"><code>load(&quot;Plot 2 cleaned data.Rdata&quot;)
+<pre class="r"><code>load(&quot;Workshop Data/Plot 2 cleaned data.Rdata&quot;)
 str(plot_data2)</code></pre>
 <pre><code>## 'data.frame':    16 obs. of  5 variables:
 ##  $ genre       : Factor w/ 12 levels &quot;Action&quot;,&quot;Adventure&quot;,..: 1 1 2 2 4 4 6 6 7 7 ...
