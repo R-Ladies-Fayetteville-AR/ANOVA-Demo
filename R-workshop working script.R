@@ -408,3 +408,17 @@ total | adj
 #   labs(y = "Total Revenue (Billions)",
 #        title = "Top 25 Movies Based on Inflation Adjusted Revenue")
 # all
+
+
+#### additional plot with trend lines
+
+ggplot(data = large_sample_genre) +
+  geom_point(aes(x = release_date, y = inflation_adjusted_gross/1000000000, color = genre)) +
+  geom_smooth(aes(x = release_date, y = inflation_adjusted_gross/1000000000, color = genre), method = "lm", se = F) +
+  facet_wrap(~genre, scales = "free") +
+  theme_bw() +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5)) +
+  labs(x = "Movie Release Date",
+       y = "Inflation Adjusted Gross Revenue (Billions)",
+       title = "Trends of Disney Revenue by Genre Over Time")
